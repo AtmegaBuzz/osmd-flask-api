@@ -143,7 +143,7 @@ api_key: 23fasdf0sdf8asj
 #### Setup and Run the Application
  - ```pip install requirements.txt``` 
  - ```export FLASK_APP=server.py```
- - ```flask db init``
+ - ```flask db init```
  - ```flask db migrate -m "initial migration"```
  - ```python server.py"```
 
