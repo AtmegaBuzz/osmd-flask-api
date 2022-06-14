@@ -40,34 +40,91 @@ This Idea focuses on providing the common Open-Source Infrastructure to the Orga
 
 <a id="Login"></a>
 
+# Resgiter 
+```{{BASE_URL}}/register```
+
+### example request
+```
+POST /login HTTP/1.1
+Host: 127.0.0.1:5000
+Content-Type: application/json
+Content-Length: 78
+
+{
+    "username":"text",
+    "email":"test@gmail.com",
+    "password":"text"
+}
+```
+### response 
+
+```
+{"message":"register successfully"}
+```
+
 # Login
-![DeepinScreenshot_select-area_20220207153128](https://user-images.githubusercontent.com/68425016/152768563-2832bac6-9097-4ddc-986d-0df97379b1cd.png)
+```{{BASE_URL}}/login```
+
+### example request
+```
+POST /login HTTP/1.1
+Host: 127.0.0.1:5000
+Content-Type: application/json
+Content-Length: 78
+
+{
+    "username":"text",
+    "email":"test@gmail.com",
+    "password":"text"
+}
+```
+### response 
+
+```
+{"api_key":"Ax38fjdsa9ff72k2;"}
+```
+
+
+
+
 
 <a id="Booking-Cab"></a>
 
 # Booking Cab
-![DeepinScreenshot_select-area_20220207153250](https://user-images.githubusercontent.com/68425016/152768627-17fb7908-3da2-421c-ad3c-7298d8b4b55a.png)
+```{{BASE_URL}}/bookcab```
+
+
+### example request
+```
+POST /login HTTP/1.1
+Host: 127.0.0.1:5000
+api_key: 23fasdf0sdf8asj
+Content-Type: text/plain
+Content-Length: 73
+
+{
+    "destination":"punjab",
+    "datetime":2021-06-25 07:58:56.550604
+}
+```
+### response 
+
+```
+{"booking":"booking added to the queue"}
+```
+
 
 <a id="Your-Bookings"></a>
 
 # Your Bookings 
-![DeepinScreenshot_select-area_20220207153341](https://user-images.githubusercontent.com/68425016/152768780-d900ff3b-6d50-40f2-9f63-57a98df07017.png)
+```{{BASE_URL}}/listbookings```
 
-<a id="Bookings-Accepted"></a>
-
-# Bookings accepted 
-![DeepinScreenshot_select-area_20220207153528](https://user-images.githubusercontent.com/68425016/152768864-d36cdfc0-e45b-4d48-8965-b66697a478c4.png)
-
-<a id="Individual-Bookings"></a>
-
-# Individual Bookings Info (info of people who will be sitting on same shared cab).
-![DeepinScreenshot_select-area_20220207153552](https://user-images.githubusercontent.com/68425016/152769026-09d94746-f7d9-4d7b-9852-8ffad5331587.png)
-
-<a id="Chats"></a>
-
-# Chat Functionality.
-![DeepinScreenshot_select-area_20220207153749](https://user-images.githubusercontent.com/68425016/152769124-3713e000-bbe8-46b9-a6a3-2d3c3017045d.png)
-
+### example request
+```
+POST /login HTTP/1.1
+Host: 127.0.0.1:5000
+api_key: 23fasdf0sdf8asj
+```
 
 <a id="Getting-Started"></a>
 
@@ -80,17 +137,11 @@ This Idea focuses on providing the common Open-Source Infrastructure to the Orga
  - go to google developer console and enable and generate your own Google Maps Api
  - add the api to .env file. 
 
-<a id="redis-host"></a>
-
-#### Add Redis Host URI. 
- - go to redis lab and setup your own redis database 
- - add the redis host uri to .env 
-
-<a id="run"></a>
 
 #### Setup and Run the Application
  - ```pip install requirements.txt``` 
- - ```python manage.py makemigrations```
- - ```python manage.py migrate```
- - ```python manage.py runserver```
+ - ```export FLASK_APP=server.py```
+ - ```flask db init``
+ - ```flask db migrate -m "initial migration"```
+ - ```python server.py"```
 
