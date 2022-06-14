@@ -2,7 +2,7 @@
 
 # OSMD (One Source Multiple Destination) Flask-Apis
 
-Note: Depricated
+Note: Depricated project <br/>
 project is migrated to Django https://github.com/AtmegaBuzz/osmd.git
 
 
