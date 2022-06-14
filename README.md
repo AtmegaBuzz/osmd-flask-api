@@ -5,16 +5,13 @@
 - [About Project](#About-Project)
 
 - [Working](#Working)
+  - [Login](#Register)
   - [Login](#Login)
   - [Booking Cab](#Booking-Cab)
   - [Your Bookings](#Your-Bookings)
-  - [Accepted Bookings](#Bookings-Accepted)
-  - [Individual Bookings](#Individual-Bookings)
-  - [Chat Functionality](#Chats)
 
 - [Getting Started](#Getting-Started)
   - [How to Add Google Maps Api](#oogle-api)
-  - [How to Add Redis Host](#redis-host)
   - [Setup And Run the Application](#run)
 
 
@@ -38,7 +35,7 @@ This Idea focuses on providing the common Open-Source Infrastructure to the Orga
 2.This app takes the Const Starting point which will be same for all users , it can be a organisation or a school.
 3.then it optimises the path for one source to multiple destination
 
-<a id="Login"></a>
+<a id="Register"></a>
 
 # Resgiter 
 ```{{BASE_URL}}/register```
@@ -61,6 +58,7 @@ Content-Length: 78
 ```
 {"message":"register successfully"}
 ```
+<a id="Login"></a>
 
 # Login
 ```{{BASE_URL}}/login```
