@@ -5,7 +5,7 @@
 - [About Project](#About-Project)
 
 - [Working](#Working)
-  - [Login](#Register)
+  - [Register](#Register)
   - [Login](#Login)
   - [Booking Cab](#Booking-Cab)
   - [Your Bookings](#Your-Bookings)
