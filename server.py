@@ -18,6 +18,8 @@ migrate = Migrate(app, db)
 app.add_url_rule('/register', view_func=login_view.register,methods=['POST'])
 app.add_url_rule('/login', view_func=login_view.login,methods=['POST'])
 app.add_url_rule('/bookcab', view_func=cab_view.BookCab,methods=['POST'])
+app.add_url_rule('/listbookings', view_func=cab_view.BookCab,methods=['GET'])
+
 
 
 
